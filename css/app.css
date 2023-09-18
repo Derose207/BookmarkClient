@@ -90,7 +90,9 @@
     margin: 8px;
     cursor: pointer;
 }
-
+a {
+ color:rgb(0, 87, 204);
+}
 .menuIcon {
     -webkit-text-fill-color: rgb(0, 87, 204);
 }
