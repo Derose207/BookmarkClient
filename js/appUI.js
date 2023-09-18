@@ -90,7 +90,7 @@ async function renderBookmarks() {
             saveContentScrollPosition();
             renderDeleteContactForm(parseInt($(this).attr("deleteContactId")));
         });
-        $(".contactRow").on("click", function (e) { e.preventDefault(); })
+        $(".contactRow").on("click", function (e) { window.location = $(this.find("#bookmarkurl").val()) })
         
 
 
@@ -319,11 +319,12 @@ function renderBookmark(bookmark) {
         <div class="contactContainer noselect">
         
             <div class="contactLayout">
+             <input type= "hidden" value= "${bookmark.url}" id="bookmarkurl">
                 
                 <span class="bookmarkTitre"><img src=${urlLogo} alt="Description de l'image" width ="20" height ="20"> ${bookmark.Titre}</span>
                 
-                <span class="bookmarkCategorie"> 
-                 <a href="${bookmark.url}"  >  ${bookmark.categorie}</a>
+                <span class="bookmarkCategorie"> ${bookmark.categorie}
+                 <a href="${bookmark.url}" >  </a>
                 </span>
                
                
