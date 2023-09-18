@@ -324,7 +324,7 @@ function renderBookmark(bookmark) {
                 <span class="bookmarkTitre"><img src=${urlLogo} alt="Description de l'image" width ="20" height ="20"> ${bookmark.Titre}</span>
                 
                 <span class="bookmarkCategorie"> ${bookmark.categorie}
-                 <a href="${bookmark.url}" > ${bookmark.categorie} </a>
+                 <a href="${bookmark.url}" > "${bookmark.categorie}" </a>
                 </span>
                
                
